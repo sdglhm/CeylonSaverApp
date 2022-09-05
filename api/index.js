@@ -10,7 +10,7 @@ export default function handler(request, response) {
     let file = files[index];
 
     response.writeHead(302, {
-      Location: `wallpapers/${file}`,
+      Location: `/wallpapers/${file}`,
       //add other headers here...
     });
     response.end();
